@@ -16,6 +16,5 @@ public class Erfolg
             System.out.println("Regel " + i + ": ");
             System.out.println("Ueben!");
          }
-
       }
 }
