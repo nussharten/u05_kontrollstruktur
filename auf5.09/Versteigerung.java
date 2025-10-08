@@ -1,5 +1,5 @@
 // u05_kontrollstruktur
-// auf5.09
+// auf5.10
 
 public class Versteigerung
 {
