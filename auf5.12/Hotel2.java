@@ -48,13 +48,13 @@ public class Hotel2
                {
 	               System.out.println(" |  ____   ___  |");
                }
+             }
+           }
+         }
      {
 		System.out.println(" |  |  |   | |  |");
 		System.out.println(" |  |  |   ---  |");
 		System.out.println("==================");
-     }
-    }
-   }
   }
  }
 }
