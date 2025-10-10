@@ -55,7 +55,7 @@ public class Hotel2
 		System.out.println(" |  |  |   | |  |");
 		System.out.println(" |  |  |   ---  |");
 		System.out.println("==================");
-  }
+     }
  }
 }
   
