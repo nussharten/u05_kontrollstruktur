@@ -1,14 +1,13 @@
 // u05_kontrollstruktur
 // auf5.28
 
-
 public class BreakEvenPoint2
 {
    public static void main(String[] args)
       {
 			int verkaufspreis  = 1500;
-			int rohstoffkosten = 500;
-			int arbeitskosten  = 300;
+			int rohstoffkosten = 600;
+			int arbeitskosten  = 400;
 			int fixkosten      = 5000;
     		int maxStueckzahl  = 15;
 
@@ -30,9 +29,11 @@ public class BreakEvenPoint2
 				int gesamtkosten = fixkosten + variableKosten;
 				int erloes = verkaufspreis * i;
 				int ueberschuss = erloes - gesamtkosten;
+            int stueckkosten   = gesamtkosten / i;
+            int stueckUeberschuss = ueberschuss / i;
  
 				System.out.println();
-				System.out.printf("Stueckzahl:%3d  Gesamtkosten:%6d  Erloes:%6d  Ueberschuss:%7d", i, gesamtkosten, erloes, ueberschuss);
+				System.out.printf("Stueckzahl:%3d  Stueckkosten:%6d  Ueberschuss pro Stueck:%7d", i, stueckkosten, stueckUeberschuss);
 
 				if(breakEventstueck == 0 && ueberschuss >= 0)
 				{
