@@ -22,7 +22,6 @@ public class BreakEventPoint
 			System.out.println ("Fixkosten pro Monat:       " + fixkosten);
 			System.out.println ("Maximale Stueckzahl pro Monat: " + maxStueckzahl);
 
-
 			for (int i = 1; i <= maxStueckzahl; i++)
 			{
 				int variableKosten = (rohstoffkosten + arbeitskosten) * i;
@@ -31,8 +30,9 @@ public class BreakEventPoint
 				int ueberschuss = erloes - gesamtkosten;
 
 				//System.out.println ("Stueckzahl: | Gesamtkosten: | Erloes: | Ueberschuss:"); 
-				System.out.println ();
-				System.out.printf ("Stueckzahl:%3d  Gesamtkosten:%6d  Erloes:%6d  Ueberschuss:%7d", i, gesamtkosten, erloes, ueberschuss);
-			} 
+				System.out.println();
+				System.out.printf("Stueckzahl:%3d  Gesamtkosten:%6d  Erloes:%6d  Ueberschuss:%7d", i, gesamtkosten, erloes, ueberschuss);
+			}
+			   System.out.println();
 		}
 }
