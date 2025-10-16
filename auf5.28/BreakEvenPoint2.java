@@ -5,11 +5,12 @@ public class BreakEvenPoint2
 {
    public static void main(String[] args)
       {
-			int verkaufspreis  = 1500;
-			int rohstoffkosten = 600;
-			int arbeitskosten  = 400;
-			int fixkosten      = 5000;
-    		int maxStueckzahl  = 15;
+			int verkaufspreis    = 1500;
+			int rohstoffkosten   = 600;
+			int arbeitskosten    = 400;
+			int fixkosten        = 5000;
+    		int maxStueckzahl    = 15;
+			int breakEventstueck = 0;
 
 			System.out.println ();
 			System.out.println ("Break-Event-Point");
@@ -20,8 +21,6 @@ public class BreakEvenPoint2
 			System.out.println ("Arbeitskosten pro Stueck:  " + arbeitskosten);
 			System.out.println ("Fixkosten pro Monat:       " + fixkosten);
 			System.out.println ("Maximale Stueckzahl pro Monat: " + maxStueckzahl);
-
-			int breakEventstueck = 0;
 
 			for (int i = 1; i <= maxStueckzahl; i++)
 			{
@@ -42,9 +41,7 @@ public class BreakEvenPoint2
 			 }
 					System.out.println ();
 					System.out.println ();
-				
-					{
-						System.out.println("Es müssen mindestens " + breakEventstueck + " Stück produziert werden.");
-					}
+					System.out.println("Es müssen mindestens " + breakEventstueck + " Stück produziert werden.");
+					
 		  }
 }
